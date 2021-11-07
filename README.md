@@ -7,7 +7,10 @@ A project by Group 10: <br>
 [Joshua (Jiaxin) Hao]() <br>
 
 ## Purpose:
-The ability to predict customer churn in advance allows companies to retain customers at the highest risk of churn by proactively engaging with them. This represents a huge additional potential revenue source for companies.
+The ability to predict customer churn in advance allows companies to retain customers at the highest risk of churn by proactively engaging with them. This represents a huge additional potential revenue source for companies.<br>
+
+![Customer Churn Prediction - example workflow](https://github.com/XDarkPhoenixes/Group_10/blob/main/graph.png)
+[click here for image source](https://towardsdatascience.com/predict-customer-churn-the-right-way-using-pycaret-8ba6541608ac)
 
 ## Background and Reason for Selecting This Topic:
 Customer retention is an important KPI for companies with a subscription-based business model. Customer churn is defined as the percentage of customers that stopped using your company’s product or service during a certain time frame. <br>
