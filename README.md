@@ -47,7 +47,8 @@ The data set includes information about:<br>
  - GitHub
 <br>
 Since it was difficult to find a slot that meets everyone's schedule, we resorted to catching-up live during class sessions and exchanging messages in our Slack channel. GitHub is used for code version control.<br>
-[Link to Group 10's public repository](https://github.com/XDarkPhoenixes/Group_10)
+<br>
+Link to Group 10's public repository: https://github.com/XDarkPhoenixes/Group_10
 
 ## Toolbox:
  - Python 3 (sklearn, plotly, pandas, pycaret, numpy)
