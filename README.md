@@ -46,7 +46,7 @@ The data set includes information about:<br>
  - Video calls
  - GitHub
 <br>
-Since it was difficult to find a slot that meets everyone's schedule, we resorted to catching-up live during class sessions and exchanging messages in our Slack channel. GitHub is used for code version control.<br>
+Since it was difficult to find a slot that meets everyone's schedule, we resorted to catching-up live during class sessions and exchanging messages in our Slack channel. GitHub is used for code version control. Saturday tutorial session will also be used to keep track on group progress when members are able to attend and work on certain tasks.<br>
 <br>
 Link to Group 10's public repository: https://github.com/XDarkPhoenixes/Group_10
 
