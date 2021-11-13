@@ -1,0 +1,23 @@
+CREATE TABLE customer_churn (
+	customerID TEXT PRIMARY KEY NOT NULL,
+	gender TEXT,
+	SeniorCitizen  TEXT,
+	Partner TEXT,
+	Dependents TEXT,
+	tenure TEXT,
+	PhoneService TEXT,
+	MultipleLines TEXT,
+	InternetService TEXT,
+	OnlineSecurity TEXT,
+	OnlineBackup TEXT,
+	DeviceProtection TEXT,
+	TechSupport TEXT,
+	StreamingTV TEXT,
+	StreamingMovies TEXT,
+	Contract TEXT,
+	PaperlessBilling TEXT,
+	PaymentMethod TEXT,
+	MonthlyCharges FLOAT,
+	TotalCharges FLOAT,
+	Churn TEXT
+);
