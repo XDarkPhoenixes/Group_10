@@ -56,6 +56,7 @@ Link to Group 10's public repository: https://github.com/XDarkPhoenixes/Group_10
  - Google Colab
  - GitHub
  - Slack
+ - Tableau
 
 ## Roles:
  - Communication strategists: Gabriela, Tron
@@ -63,3 +64,7 @@ Link to Group 10's public repository: https://github.com/XDarkPhoenixes/Group_10
  - Modelling: Gabriela, Tron
  - Machine learning model comparison with pycaret: Teodora
  - Editing, proofreading, troubleshooting: ALL
+
+## Description of Storyboard
+
+Tool used: Tableau was used to create the data visualizations. We used this tool because it allowed us to easily switch between different visulization types when trying to find the model that best represented the message we were trying to convey. Tableau also allowed us to create interactive data visualizations
