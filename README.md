@@ -67,4 +67,4 @@ Link to Group 10's public repository: https://github.com/XDarkPhoenixes/Group_10
 
 ## Description of Storyboard
 
-Tool used: Tableau was used to create the data visualizations. We used this tool because it allowed us to easily switch between different visulization types when trying to find the model that best represented the message we were trying to convey. Tableau also allowed us to create interactive data visualizations
+Tool used: Tableau was used to create the data visualizations. We used this tool because it allowed us to easily handle large amounts of data when switching between different visulization types to find the model that best displayed the data. We were also able to easily change data types from numerical to text which was necessary since many of the variables in our dataset where coded in . The visualization created through Tableau are  Tableau also creates interactive data visualizations which allow the user to 
