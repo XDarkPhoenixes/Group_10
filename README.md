@@ -67,4 +67,10 @@ Link to Group 10's public repository: https://github.com/XDarkPhoenixes/Group_10
 
 ## Description of Storyboard
 
-Tool used: Tableau was used to create the data visualizations. We used this tool because it allowed us to easily handle large amounts of data when switching between different visulization types to find the model that best displayed the message. We were also able to easily change data types from numerical to text which was necessary since many of the binary categorical vairables in our dataset were encoded as numerical values. The visualization created through Tableau are  Tableau also creates interactive data visualizations which allow the user to 
+Why Tableau: 
+Tableau was used to create the data visualizations and storyboard. We used this tool because it allowed us to easily handle large amounts of data while switching between different visulization types. This quick transformation process allowed us to efficiently find the model that best displayed the message we wanted to convey. Additionally, Tableau allows easy conversion between data types which was necessary for converting the binary categorical variables in our dataset from numerical to string values. Furthermore, the visualizations are interactive which allow users to easily explore the complex data display. 
+
+How to Interact with the Visualizations:
+There are a few ways to interact with the data visualization in this analysis. You can hover over the elements of the display (ex. slice of the pie chart, bar of the bar chart, data point on the scatter plot etc.) to view specific information on the count values and dimensions associated with that element. Another method to interact with the display is through filters. For the 'Customer Churn by Tenure, Charges, and Contract type' scatterplot at the end of the story board, you can select or deselect the churn filters to view a more specific visualization. To only view customers that churned, deselect 'No Churn'. In contrast, to only view customers that did not churn, deselect 'Yes Churn'.
+
+
