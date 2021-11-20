@@ -63,9 +63,11 @@ Link to Group 10's public repository: https://github.com/XDarkPhoenixes/Group_10
  - Project description: Sarah, Joshua, Teodora
  - Modelling: Gabriela, Tron
  - Machine learning model comparison with pycaret: Teodora
+ - Tableau Visualizations:  Sarah
  - Editing, proofreading, troubleshooting: ALL
 
 ## Description of Storyboard
+[click here for the storyboard](https://public.tableau.com/shared/HTPY7BKPR?:display_count=n&:origin=viz_share_link)
 
 Why Tableau: 
 Tableau was used to create the data visualizations and storyboard. We used this tool because it allowed us to easily handle large amounts of data while switching between different visulization types. This quick transformation process allowed us to efficiently find the model that best displayed the message we wanted to convey. Additionally, Tableau allows easy conversion between data types which was necessary for converting the binary categorical variables in our dataset from numerical to string values. Furthermore, the visualizations are interactive which allow users to easily explore the complex data display. 
