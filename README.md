@@ -63,6 +63,7 @@ Link to Group 10's public repository: https://github.com/XDarkPhoenixes/Group_10
  - Project description: Sarah, Joshua, Teodora
  - Modelling: Gabriela, Tron
  - Machine learning model comparison with pycaret: Teodora
+ - Tableau Visualizations:  Sarah
  - Editing, proofreading, troubleshooting: ALL
 
 ## Description of Storyboard
