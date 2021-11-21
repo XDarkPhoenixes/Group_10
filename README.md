@@ -79,7 +79,7 @@ Categorical columns:
 </p>
 
 
-Also, two other tools, **train_test_split()** and **StandardScaler()**, were used to standardize the input data. Datasets will often contain features highly varying in magnitudes, units and range, scaling is necessary to guarantee that values are not going to be misleading to the analysis. If not correctly scaled, the algorithm might consider 100m a larger value than 1km for example. 
+Also, two other tools, **train_test_split()** and **StandardScaler()**, were used to standardize the input data. Datasets will often contain features highly varying in magnitudes, units and range, scaling is necessary to guarantee that those numbers are not going to be misleading to the analysis. If not correctly scaled, the algorithm might consider 100m a larger value than 1km for example. 
 
 The same preprocessing steps were used throughout the project in order to fairly compare models. A library called Pycaret was being tested and was used before and after data preprocessing, serving in different parts of the project, such as model choice, data exploration and analysis. 
 
@@ -154,13 +154,69 @@ Tuning was done in order to further improve the performance of the model. <br>
 
 
 ## Data Exploration and Analysis
-(...)
+
+The dataset was preprocessed and multiple methods were applied to create a churn prediction model. Nevertheless, the data can generate other relevant outcomes for our analysis. The Telco table includes information such as senior, partner, dependents and other features that can be used to better understand the company's customers. 
+
+When using machine learning we can't see clearly the relantionships that methods are creating to produce a predictive model, so it's important to explore the dataset in different ways and get insights that might be missed during data processing. 
+
+ 
+
+Churned customers represent roughly one quarter of our dataset: 
+<p align="center">
+<kbd>
+  <img src="https://github.com/XDarkPhoenixes/Group_10/blob/fc8d3de00619aab0f4d0a1c073cd39ddb3ad2bcf/Tableau%20Visualizations/Figure%201-%20Number%20of%20Churn.png">
+</kbd>  &nbsp;
+</p>
+
+The distribution of female and male customers is quite uniform: 
+<p align="center">
+<kbd>
+  <img src="https://github.com/XDarkPhoenixes/Group_10/blob/fc8d3de00619aab0f4d0a1c073cd39ddb3ad2bcf/Tableau%20Visualizations/Figure%202-%20Gender%20Breakdown.png">
+</kbd>  &nbsp;
+</p>
+
+And the gender doesn't seem to impact other variables of the dataset:
+<p align="center">
+<kbd>
+  <img src="https://github.com/XDarkPhoenixes/Group_10/blob/fc8d3de00619aab0f4d0a1c073cd39ddb3ad2bcf/Tableau%20Visualizations/Figure%204-%20Churn%20by%20Demographics%20and%20Gender.png">
+</kbd>  &nbsp;
+</p>
+
+Including churn:
+<p align="center">
+<kbd>
+  <img src="https://github.com/XDarkPhoenixes/Group_10/blob/fc8d3de00619aab0f4d0a1c073cd39ddb3ad2bcf/Tableau%20Visualizations/Figure%206%20-%20Churn%20by%20Charges,%20Contract,%20Tenure%20and%20Gender.png">
+</kbd>  &nbsp;
+</p>
+
+
+
+
+
+A very important feature of the churn analysis is the type of contract. Customers with a month-to-month contract tend to cancel their subscription more easily compared to the ones with yearly commitments. 
+
+<p align="center">
+<kbd>
+  <img src="https://github.com/XDarkPhoenixes/Group_10/blob/fc8d3de00619aab0f4d0a1c073cd39ddb3ad2bcf/Tableau%20Visualizations/Figure%205-%20Churn%20by%20Charges,%20Tenure,%20and%20Contract.png">
+</kbd>  &nbsp;
+</p>
+
+
+
+
+
 
 
 
 ## Storyboard - Tableau
 
 Tableau was used to create the data visualizations and storyboard because it allowed us to easily handle large amounts of data while switching between different visulization types. This quick transformation process allowed us to efficiently find the model that best displayed the message we wanted to convey. Additionally, Tableau allows easy conversion between data types which was necessary for converting the binary categorical variables in our dataset from numerical to string values. Furthermore, the visualizations are interactive which allow users to easily explore the complex data display. 
+
+<p align="center">
+<kbd>
+  <img src="https://github.com/XDarkPhoenixes/Group_10/blob/fc8d3de00619aab0f4d0a1c073cd39ddb3ad2bcf/Tableau%20Visualizations/Story%20Board%20Snapshot.png">
+</kbd>  &nbsp;
+</p>
 
 There are a few ways to interact with the data visualization in this analysis. You can hover over the elements of the display (ex. slice of the pie chart, bar of the bar chart, data point on the scatter plot etc.) to view specific information on the count values and dimensions associated with that element. Another method to interact with the display is through filters. For the 'Customer Churn by Tenure, Charges, and Contract type' scatterplot at the end of the story board, you can select or deselect the churn filters to view a more specific visualization. To only view customers that churned, deselect 'No Churn'. In contrast, to only view customers that did not churn, deselect 'Yes Churn'.
 
