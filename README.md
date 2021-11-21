@@ -13,7 +13,7 @@ A project by Group 10: <br>
 
 When given the task to find a dataset and develop an analysis to tell a story, the group decided to prioritize the real life, on the job, experience that the project can provide. Since one of the members currently works for a software company with a subscription business model, the dataset chosen was from an organization with similar operations. The group believes that studying the similar data can bring great insights about churn analysis and provide valuable knowledge for future projects. 
 
-Even though the project eventually finds a model that yields the best results for the Telco dataset, it doesn't mean that all churn analysis shoud be done using the same method, it's important to remember that different datasets interact with models distinctively. 
+Even though the project eventually finds a model that yields the best results for the Telco dataset, it doesn't mean that all churn analysis should be done using the same method, it's important to remember that different datasets interact with models distinctively. 
 
 
 ## Customer Churn
@@ -149,15 +149,16 @@ Tuning was done in order to further improve the performance of the model. <br>
 #### Limitations
  - The model's accuracy is not as good as that of other models.
  - Tuning is not easy to do with this model, as only the 'var_smoothing' parameter can be evaluated. 
- - Depending of the business goal and retention campaign that executes according to the model predictions, Naive Bayes may not be the best choise from a business perspective. 
+ - Depending of the business goal and retention campaign that executes according to the model predictions, Naive Bayes may not be the best choice from a business perspective. 
 
-
+## Database Integration
+(...)
 
 ## Data Exploration and Analysis
 
 The dataset was preprocessed and multiple methods were applied to create a churn prediction model. Nevertheless, the data can generate other relevant outcomes for our analysis. The Telco table includes information such as senior, partner, dependents and other features that can be used to better understand the company's customers. 
 
-When using machine learning we can't see clearly the relantionships that methods are creating to produce a predictive model, so it's important to explore the dataset in different ways and get insights that might be missed during data processing. 
+When using machine learning we can't see clearly the relationships that methods are creating to produce a predictive model, so it's important to explore the dataset in different ways and get insights that might be missed during data processing. 
 
  
 
@@ -210,7 +211,7 @@ A very important feature of the churn analysis is the type of contract. Customer
 
 ## Storyboard - Tableau
 
-Tableau was used to create the data visualizations and storyboard because it allowed us to easily handle large amounts of data while switching between different visulization types. This quick transformation process allowed us to efficiently find the model that best displayed the message we wanted to convey. Additionally, Tableau allows easy conversion between data types which was necessary for converting the binary categorical variables in our dataset from numerical to string values. Furthermore, the visualizations are interactive which allow users to easily explore the complex data display. 
+Tableau was used to create the data visualizations and storyboard because it allowed us to easily handle large amounts of data while switching between different visualization types. This quick transformation process allowed us to efficiently find the model that best displayed the message we wanted to convey. Additionally, Tableau allows easy conversion between data types which was necessary for converting the binary categorical variables in our dataset from numerical to string values. Furthermore, the visualizations are interactive which allow users to easily explore the complex data display. 
 
 <p align="center">
 <kbd>
@@ -268,9 +269,24 @@ README.md:
 **Machine Learning Model** 
 
 - [X] 2. Description of data preprocessing
+
+[DataBase_Preprocessing.ipynb](https://github.com/XDarkPhoenixes/Group_10/blob/fc8d3de00619aab0f4d0a1c073cd39ddb3ad2bcf/DataBase_Preprocessing.ipynb)
+
 - [X] 2. Description of feature engineering and the feature selection, including the team's decision-making process
+
+[PycaretTEST.ipynb](https://github.com/XDarkPhoenixes/Group_10/blob/fc8d3de00619aab0f4d0a1c073cd39ddb3ad2bcf/PycaretTEST.ipynb)
+
+[Telco_churn_RandomForestClassifier.ipynb](https://github.com/XDarkPhoenixes/Group_10/blob/fc8d3de00619aab0f4d0a1c073cd39ddb3ad2bcf/Telco_churn_RandomForestClassifier.ipynb)
+
 - [X] 2. Description of how data was split into training and testing sets
 - [X] 2. Explanation of model choice, including limitations and benefits
+
+[Summary_Modelling.ipynb](https://github.com/XDarkPhoenixes/Group_10/blob/fc8d3de00619aab0f4d0a1c073cd39ddb3ad2bcf/Summary_Modelling.ipynb)
+
+[Naive_Bayes.ipynb](https://github.com/XDarkPhoenixes/Group_10/blob/fc8d3de00619aab0f4d0a1c073cd39ddb3ad2bcf/Naive_Bayes.ipynb)
+
+[Naive_Bayes_Tuned.ipynb](https://github.com/XDarkPhoenixes/Group_10/blob/fc8d3de00619aab0f4d0a1c073cd39ddb3ad2bcf/Naive_Bayes_Tuned.ipynb)
+
 - [ ] 3. Explanation of changes in model choice
 - [ ] 3. Description of how the model was trained
 - [ ] 4. Description and explanation of model's confusion matrix, including final accuracy score
