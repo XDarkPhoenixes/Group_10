@@ -58,14 +58,38 @@ Each row represents a customer, each column contains customer’s [attributes de
 
 ## Data preprocessing
 
-################################
+
+The Telco dataset retrieved from Kaggle was pretty much clean and didn't require extensive preprocessing. The original table has 7043 rows, after dropping the null values the number went down to 7032, only 11 rows were eliminated, a small percentage that doesn't need further investigation. Also, it was necessary to eliminate the customer ID column and adjust the data type of 'seniorcitizen' and 'tenure'. 
+
+ Data types after adjustments:
+<p align="center">
+<kbd>
+  <img src="https://github.com/XDarkPhoenixes/Group_10/blob/fc8d3de00619aab0f4d0a1c073cd39ddb3ad2bcf/Resources/Preprocessing%20data%20type.png">
+</kbd>  &nbsp;
+</p>
+
+
+A lot of the methods only accept numerical inputs, the dataset was encoded using **OneHotEncoder()** so that categorical variables could be properly (and safely) processed by all the models. 
+
+Categorical columns:
+<p align="center">
+<kbd>
+  <img src="https://github.com/XDarkPhoenixes/Group_10/blob/fc8d3de00619aab0f4d0a1c073cd39ddb3ad2bcf/Resources/Categorical%20Variables.png%20.png">
+</kbd>  &nbsp;
+</p>
+
+
+Also, two other tools, **train_test_split()** and **StandardScaler()**, were used to standardize the input data. Datasets will often contain features highly varying in magnitudes, units and range, scaling is necessary to guarantee that values are not going to be misleading to the analysis. If not correctly scaled, the algorithm might consider 100m a larger value than 1km for example. 
+
+The same preprocessing steps were used throughout the project in order to fairly compare models. A library called Pycaret was being tested and was used before and after data preprocessing, serving in different parts of the project, such as model choice, data exploration and analysis. 
+
 
 ### Preliminary Feature Engineering and Preliminary Feature Selection
 
-A library called Pycaret was used to initially evaluate the feature importance and determine which features to use. The code is available in [this Google Colab Notebook](https://github.com/XDarkPhoenixes/Group_10/blob/main/PycaretTEST.ipynb). The following plot ranks the features of the dataset according to their importance:
+The Pycaret library was used to initially evaluate the feature importance and determine which features to use. The code is available in [this Google Colab Notebook](https://github.com/XDarkPhoenixes/Group_10/blob/main/PycaretTEST.ipynb). The following plot ranks the features of the dataset according to their importance:
 ![image](https://github.com/XDarkPhoenixes/Group_10/blob/main/Resources/featuresselection.png) <br>
 
-Then, RandomForestClassifier was used to create the below feature importance view:
+Then, [RandomForestClassifier](https://github.com/XDarkPhoenixes/Group_10/blob/fc8d3de00619aab0f4d0a1c073cd39ddb3ad2bcf/Telco_churn_RandomForestClassifier.ipynb) was used to create the below feature importance view:
 ```
 # List features with more impact 
 
@@ -94,7 +118,7 @@ Since the original dataset wasn't rich in features, it was decided to use all av
 
 ### How Data Was Split into Training and Testing Sets
 
-We used the train_test_split function to split the data into testing and training sets, example code follows: <br>
+Given the project's goal to predict customer churn, the Churn_Yes column was defined as the dependent variable (y) and the train_test_split() function was used to split the data into testing and training sets: <br>
 ```
 # Split our preprocessed data into out features and target arrays
 y = Telco_df["Churn_Yes"].values
@@ -104,12 +128,14 @@ X = Telco_df.drop(['Churn_Yes','Churn_No'],1)
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=78)
 ```
 
+
+
 ## Model Choice, Limitations and Benefits
 
-A library called pycaret was used for model comparison and selection. After going though the initial preprocessing and data splitting steps, we produced the following model comparison with Pycaret:
+Pycaret was also used for model comparison and selection. After going though the initial preprocessing and data splitting steps, we produced the following model comparison:
 ![models](https://github.com/XDarkPhoenixes/Group_10/blob/main/Resources/model%20comparison.JPG)
 
-With our project, we are aiming to correctly identify as many churning customers as possible. Therefore, the metric that is most important for us in the Recall. As seen in the chart above, the model giving the best Recall result is Naive Bayes. <br>
+In this project, we want to correctly identify as many churning customers as possible, therefore, the metric that is most important for us in the Recall. As seen in the chart above, the model giving the best Recall result is Naive Bayes. <br>
 
 Even though we went through feature engineering tests with the purpose of selecting a business-smart model that takes into account an imaginary lifetime value and promo code value, at this stage we decided not to overcomplicate the model selection and proceed with Naive Bayes as our model of choice. <br>
 
@@ -126,13 +152,10 @@ Tuning was done in order to further improve the performance of the model. <br>
  - Depending of the business goal and retention campaign that executes according to the model predictions, Naive Bayes may not be the best choise from a business perspective. 
 
 
-###################
 
-## Data Exploration Phase of the Project
+## Data Exploration and Analysis
 (...)
 
-## Analysis Phase of the Project
-(...)
 
 
 ## Storyboard - Tableau
