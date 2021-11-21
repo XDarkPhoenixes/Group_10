@@ -152,7 +152,27 @@ Tuning was done in order to further improve the performance of the model. <br>
  - Depending of the business goal and retention campaign that executes according to the model predictions, Naive Bayes may not be the best choice from a business perspective. 
 
 ## Database Integration
-(...)
+
+> To the grader: our data comes from a single resource, and the data is already Normalized. In this situation, we use one table to save the data, and we don't need to join table with the database.
+
+### Cloud-Based DataBase with AWS:
+
+* The team created a postgresSQL DB on AWS
+
+![image](https://user-images.githubusercontent.com/48306359/142778971-0aef89f4-073b-4352-8298-654cd6a7c561.png)
+
+
+
+* pgAdmin is the plat-form used to run sql script [create_table.sql](create_table.sql), like creating the table; load data; and monitor performances
+
+![image](https://user-images.githubusercontent.com/48306359/142779001-9c5ee767-9dcf-4194-b182-fa7fd2216d29.png)
+
+
+* After the raw data is ready, data are read into google colab with pySpark and Pandas
+
+![image](https://user-images.githubusercontent.com/48306359/142779250-633dc27d-7572-44e8-9f40-42518663b21e.png)
+
+
 
 ## Data Exploration and Analysis
 
