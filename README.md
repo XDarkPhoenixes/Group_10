@@ -61,8 +61,9 @@ Link to Group 10's public repository: https://github.com/XDarkPhoenixes/Group_10
 ## Roles:
  - Communication strategists: Gabriela, Tron
  - Project description: Sarah, Joshua, Teodora
+ - Database management: Joshua
  - Modelling: Gabriela, Tron
- - Machine learning model comparison with pycaret: Teodora
+ - Model comparison with pycaret, model tuning: Teodora
  - Tableau Visualizations:  Sarah
  - Editing, proofreading, troubleshooting: ALL
 
@@ -74,5 +75,55 @@ Tableau was used to create the data visualizations and storyboard. We used this 
 
 How to Interact with the Visualizations:
 There are a few ways to interact with the data visualization in this analysis. You can hover over the elements of the display (ex. slice of the pie chart, bar of the bar chart, data point on the scatter plot etc.) to view specific information on the count values and dimensions associated with that element. Another method to interact with the display is through filters. For the 'Customer Churn by Tenure, Charges, and Contract type' scatterplot at the end of the story board, you can select or deselect the churn filters to view a more specific visualization. To only view customers that churned, deselect 'No Churn'. In contrast, to only view customers that did not churn, deselect 'Yes Churn'.
+
+## Description of the Analysis Phase of the Project
+(...)
+
+## Machine Learning Model 
+
+### Description of preliminary data preprocessing
+(....)
+
+### Description of Preliminary Feature Engineering and Preliminary Feature Selection
+A library called Pycaret was used to evaluate the feature importance and determine which features to use. The code is available in [this Google Colab Notebook](https://github.com/XDarkPhoenixes/Group_10/blob/main/PycaretTEST.ipynb). The following plot ranks the features of the dataset according to their importance:
+![image](https://github.com/XDarkPhoenixes/Group_10/blob/main/Resources/featuresselection.png) <br>
+
+Since the original dataset wasn't rich in features, it was decided to use all available columns when creating our churn prediction model. As the project expands into more complex production-level datasets, it can be expected that unnecessary columns might exist. For the current phase of our project, though, no features were left out.
+
+### Description of How Data Was Split into Training and Testing Sets
+We used the train_test_split function to split the data into testing and training sets, example code follows: <br>
+```
+# Split our preprocessed data into out features and target arrays
+y = Telco_df["Churn_Yes"].values
+X = Telco_df.drop(['Churn_Yes','Churn_No'],1)
+
+# Split the preprocessed data into a training and testing dataset
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=78)
+```
+
+###  Explanation of Model Choice, Limitations and Benefits
+A library called pycaret was used for model comparison and selection. fAfter going though the initial preprocessing and data splitting steps, we produced the following model comparison with Pycaret:
+![models](https://github.com/XDarkPhoenixes/Group_10/blob/main/Resources/model%20comparison.JPG)
+
+With our project, we are aiming to correctly identify as many churning customers as possible. Therefore, the metric that is most important for us in the Recall. As seen in the chart above, the model giving the best Recall result is Naive Bayes. <br>
+
+Even though we went through feature engineering tests with the purpose of selecting a business-smart model that takes into account an imaginary lifetime value and promo code value, at this stage we decided not to overcomplicate the model selection and proceed with Naive Bayes as our model of choice. <br>
+
+Tuning was done in order to further improve the performance of the model. <br>
+
+#### Benefits of Naive Bayes
+ - Comparatively simple model that assumes a Gaussian distribution of the data. 
+ - Best recall, which means this model is able to correctly flag the largest amount of churning customers.
+
+#### Limitations
+ - The model's accuracy is not as good as that of other models.
+ - Tuning is not easy to do with this model, as only the 'var_smoothing' parameter can be evaluated. 
+ - Depending of the business goal and retention campaign that executes according to the model predictions, Naive Bayes may not be the best choise from a business perspective. 
+
+
+
+
+
+
 
 
