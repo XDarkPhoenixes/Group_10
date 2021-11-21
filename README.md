@@ -85,9 +85,34 @@ There are a few ways to interact with the data visualization in this analysis. Y
 (....)
 
 ### Description of Preliminary Feature Engineering and Preliminary Feature Selection
-A library called Pycaret was used to evaluate the feature importance and determine which features to use. The code is available in [this Google Colab Notebook](https://github.com/XDarkPhoenixes/Group_10/blob/main/PycaretTEST.ipynb). The following plot ranks the features of the dataset according to their importance:
+A library called Pycaret was used to initially evaluate the feature importance and determine which features to use. The code is available in [this Google Colab Notebook](https://github.com/XDarkPhoenixes/Group_10/blob/main/PycaretTEST.ipynb). The following plot ranks the features of the dataset according to their importance:
 ![image](https://github.com/XDarkPhoenixes/Group_10/blob/main/Resources/featuresselection.png) <br>
 
+Then, RandomForestClassifier was used to create the below feature importance view:
+```
+# List features with more impact 
+
+important_features = pd.Series(data=rf_model.feature_importances_,index=X.columns)
+important_features.sort_values(ascending=False,inplace=True)
+important_features.head(15)
+TotalCharges                      0.160069
+tenure                            0.142756
+MonthlyCharges                    0.137544
+Contract_Month-to-month           0.048294
+OnlineSecurity_No                 0.033924
+PaymentMethod_Electronic check    0.031771
+TechSupport_No                    0.030719
+InternetService_Fiber optic       0.024657
+SeniorCitizen                     0.019848
+Contract_Two year                 0.017867
+gender_Female                     0.017590
+gender_Male                       0.017520
+OnlineBackup_No                   0.017464
+PaperlessBilling_No               0.015909
+PaperlessBilling_Yes              0.015661
+dtype: float64
+```
+<br>
 Since the original dataset wasn't rich in features, it was decided to use all available columns when creating our churn prediction model. As the project expands into more complex production-level datasets, it can be expected that unnecessary columns might exist. For the current phase of our project, though, no features were left out.
 
 ### Description of How Data Was Split into Training and Testing Sets
@@ -111,14 +136,17 @@ Even though we went through feature engineering tests with the purpose of select
 
 Tuning was done in order to further improve the performance of the model. <br>
 
-#### Benefits of Naive Bayes
- - Comparatively simple model that assumes a Gaussian distribution of the data. 
+#### Benefits of the Naive Bayes classifier
+ - Comparatively simple model that assumes a Gaussian distribution of the data.
+ - Based on Bayes' Theorem with an assumption of independence among predictors. 
  - Best recall, which means this model is able to correctly flag the largest amount of churning customers.
 
 #### Limitations
  - The model's accuracy is not as good as that of other models.
  - Tuning is not easy to do with this model, as only the 'var_smoothing' parameter can be evaluated. 
  - Depending of the business goal and retention campaign that executes according to the model predictions, Naive Bayes may not be the best choise from a business perspective. 
+
+
 
 
 
