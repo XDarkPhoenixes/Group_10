@@ -2,7 +2,7 @@
 
 Data Analytics Boot Camp 6/2021 - UofT SCS
 
-[Group Presentation (Google Slices)](https://docs.google.com/presentation/d/1z_FINC6oIh9rfipcNyjEfOnYt6zm2i0fSWdWJcuA-I4/edit?usp=sharing)
+[Group Presentation (Google Slides)](https://docs.google.com/presentation/d/1z_FINC6oIh9rfipcNyjEfOnYt6zm2i0fSWdWJcuA-I4/edit?usp=sharing)
 
 A project by Group 10: <br>
 [Gabriela Tuma](https://www.linkedin.com/in/gabrielatuma/) <br>
