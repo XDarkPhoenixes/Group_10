@@ -1,5 +1,0 @@
-Gabriela - test one the models that we studied
-Tron - test basic neural network
-Hao - encoding, scaling, bucketing: pre-processing
-Sarah - describe the process
-Teodora - test the pycaret library
