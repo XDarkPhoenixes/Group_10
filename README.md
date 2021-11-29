@@ -24,7 +24,7 @@ Customer retention is an important KPI for companies with a subscription-based b
 
 The ability to predict customer churn in advance allows companies to retain customers at the highest risk of churn by proactively engaging with them. This represents a huge potential for additional revenue.<br>
 
-![Customer Churn Prediction - example workflow](https://github.com/XDarkPhoenixes/Group_10/blob/main/graph.png)
+![Customer Churn Prediction - example workflow](https://github.com/XDarkPhoenixes/Group_10/blob/8cb2b7f2688183544c5fee3393be8f8ea91e4ca6/Resources/graph.png)
 [Image source](https://towardsdatascience.com/predict-customer-churn-the-right-way-using-pycaret-8ba6541608ac)
 
 Shrinking customer churn as much as possible is a challenging task that all SaaS (Software as a service) organizations are dealing with. Machine Learning models can be utilized to produce a prediction model that can help organizations pinpoint customers at risk of churning. After identifying a cohort of customers who are likely to churn, organizations can test campaigns and strategies for customer retention - discount offerings, frequent check-ins, customer success initiatives, etc. <br>
@@ -88,10 +88,10 @@ The same preprocessing steps were used throughout the project in order to fairly
 
 ### Preliminary Feature Engineering and Preliminary Feature Selection
 
-The Pycaret library was used to initially evaluate the feature importance and determine which features to use. The code is available in [this Google Colab Notebook](https://github.com/XDarkPhoenixes/Group_10/blob/main/PycaretTEST.ipynb). The following plot ranks the features of the dataset according to their importance:
+The Pycaret library was used to initially evaluate the feature importance and determine which features to use. The code is available in [this Google Colab Notebook](https://github.com/XDarkPhoenixes/Group_10/blob/f0b873d6eebc12465081b77f7ecf49460b7a3f97/Modelling%20and%20Preprocessing/PycaretTEST.ipynb). The following plot ranks the features of the dataset according to their importance:
 ![image](https://github.com/XDarkPhoenixes/Group_10/blob/main/Resources/featuresselection.png) <br>
 
-Then, [RandomForestClassifier](https://github.com/XDarkPhoenixes/Group_10/blob/fc8d3de00619aab0f4d0a1c073cd39ddb3ad2bcf/Telco_churn_RandomForestClassifier.ipynb) was used to create the below feature importance view:
+Then, [RandomForestClassifier](https://github.com/XDarkPhoenixes/Group_10/blob/f0b873d6eebc12465081b77f7ecf49460b7a3f97/Modelling%20and%20Preprocessing/Telco_churn_RandomForestClassifier.ipynb) was used to create the below feature importance view:
 ```
 # List features with more impact 
 
@@ -252,15 +252,15 @@ Content:
 - [X] 1. Questions the team hopes to answer with the data
 - [X] 2. Description of the data exploration phase of the project
 - [X] 2. Description of the analysis phase of the project
-- [ ] 3. Technologies, languages, tools, and algorithms used throughout the project
+- [X] 3. Technologies, languages, tools, and algorithms used throughout the project
 - [ ] 4. Result of analysis
 - [ ] 4. Recommendation for future analysis
 - [ ] 4. Anything the team would have done differently
 
 Slides:
 - [X] 2. Presentations are drafted in Google Slides
-- [ ] 3. Slides are primarily images or graphics (rather than primarily text)
-- [ ] 3. Images are clear, in high-definition, and directly illustrative of subject matter
+- [X] 3. Slides are primarily images or graphics (rather than primarily text)
+- [X] 3. Images are clear, in high-definition, and directly illustrative of subject matter
 
 Live Presentation:
 - [ ] 4. All team members present in equal proportions
@@ -272,14 +272,14 @@ Main Branch:
 - [X] 1. Description of the communication protocols
 - [X] 2. Outline of the project
 - [X] 2. All code necessary to perform exploratory analysis
-- [ ] 3. Description of the communication protocols has been removed
+- [X] 3. Description of the communication protocols has been removed
 - [ ] 4. All code necessary to complete the machine learning portion of the project
 - [ ] 4. Any images that have been created (at least three)
 - [ ] 4. Requirements.txt file
 
 README.md:
-- [ ] 3. Cohesive, structured outline of the project
-- [ ] 3. Link to Google Slides presentation - draft
+- [X] 3. Cohesive, structured outline of the project
+- [X] 3. Link to Google Slides presentation - draft
 - [ ] 4. Link to dashboard
 - [ ] 4. Link to Google Slides presentation
 
@@ -287,25 +287,28 @@ README.md:
 
 - [X] 2. Description of data preprocessing
 
-[DataBase_Preprocessing.ipynb](https://github.com/XDarkPhoenixes/Group_10/blob/fc8d3de00619aab0f4d0a1c073cd39ddb3ad2bcf/DataBase_Preprocessing.ipynb)
+[DataBase_Telco_Customer_Churn.ipynb](https://github.com/XDarkPhoenixes/Group_10/blob/f0b873d6eebc12465081b77f7ecf49460b7a3f97/Modelling%20and%20Preprocessing/DataBase_Telco_Customer_Churn.ipynb)
 
 - [X] 2. Description of feature engineering and the feature selection, including the team's decision-making process
 
-[PycaretTEST.ipynb](https://github.com/XDarkPhoenixes/Group_10/blob/fc8d3de00619aab0f4d0a1c073cd39ddb3ad2bcf/PycaretTEST.ipynb)
+[PycaretTEST2.ipynb](https://github.com/XDarkPhoenixes/Group_10/blob/9c0e31db78139d114faace798b511321046884f8/Modelling%20and%20Preprocessing/PycaretTEST2.ipynb)
 
-[Telco_churn_RandomForestClassifier.ipynb](https://github.com/XDarkPhoenixes/Group_10/blob/fc8d3de00619aab0f4d0a1c073cd39ddb3ad2bcf/Telco_churn_RandomForestClassifier.ipynb)
+[Telco_churn_RandomForestClassifier.ipynb](https://github.com/XDarkPhoenixes/Group_10/blob/f0b873d6eebc12465081b77f7ecf49460b7a3f97/Modelling%20and%20Preprocessing/Telco_churn_RandomForestClassifier.ipynb)
 
 - [X] 2. Description of how data was split into training and testing sets
 - [X] 2. Explanation of model choice, including limitations and benefits
 
-[Summary_Modelling.ipynb](https://github.com/XDarkPhoenixes/Group_10/blob/fc8d3de00619aab0f4d0a1c073cd39ddb3ad2bcf/Summary_Modelling.ipynb)
+[Summary_Modelling.ipynb](https://github.com/XDarkPhoenixes/Group_10/blob/f0b873d6eebc12465081b77f7ecf49460b7a3f97/Modelling%20and%20Preprocessing/Summary_Modelling.ipynb)
 
-[Naive_Bayes.ipynb](https://github.com/XDarkPhoenixes/Group_10/blob/fc8d3de00619aab0f4d0a1c073cd39ddb3ad2bcf/Naive_Bayes.ipynb)
+[Naive_Bayes.ipynb](https://github.com/XDarkPhoenixes/Group_10/blob/f0b873d6eebc12465081b77f7ecf49460b7a3f97/Modelling%20and%20Preprocessing/Naive_Bayes.ipynb)
 
-[Naive_Bayes_Tuned.ipynb](https://github.com/XDarkPhoenixes/Group_10/blob/fc8d3de00619aab0f4d0a1c073cd39ddb3ad2bcf/Naive_Bayes_Tuned.ipynb)
+[Naive_Bayes_Tuned.ipynb](https://github.com/XDarkPhoenixes/Group_10/blob/f0b873d6eebc12465081b77f7ecf49460b7a3f97/Modelling%20and%20Preprocessing/Naive_Bayes_Tuned.ipynb)
 
-- [ ] 3. Explanation of changes in model choice
-- [ ] 3. Description of how the model was trained
+- [X] 3. Explanation of changes in model choice
+- [X] 3. Description of how the model was trained
+
+[Summary_Modelling_Database.ipynb](https://github.com/XDarkPhoenixes/Group_10/blob/main/Summary_Modelling_Database.ipynb)
+
 - [ ] 4. Description and explanation of model's confusion matrix, including final accuracy score
 
 **Database Integration**
@@ -322,9 +325,9 @@ README.md:
 
 - [X] 2. Storyboard on Google Slide(s) 
 - [X] 2. Description of the tool(s) that will be used to create final dashboard 
-- [ ] 3. Images from the initial analysis
-- [ ] 3. Data (images or report) from the machine learning task
-- [ ] 3. At least one interactive element
+- [X] 3. Images from the initial analysis
+- [X] 3. Data (images or report) from the machine learning task
+- [X] 3. At least one interactive element
 
 ## Roles:
  - Communication strategists: Gabriela, Tron
@@ -334,16 +337,6 @@ README.md:
  - Model comparison with pycaret, model tuning: Teodora
  - Tableau Visualizations:  Sarah
  - Editing, proofreading, troubleshooting: ALL
-
-
-## Communication protocols:
- - Slack
- - Video calls
- - GitHub
-<br>
-Since it was difficult to find a slot that meets everyone's schedule, we resorted to catching-up live during class sessions and exchanging messages in our Slack channel. GitHub is used for code version control. Saturday tutorial session will also be used to keep track on group progress when members are able to attend and work on certain tasks.<br>
-<br>
-
 
 ## Toolbox:
  - Python 3 (sklearn, plotly, pandas, pycaret, numpy)
