@@ -17,6 +17,11 @@ When given the task to find a dataset and develop an analysis to tell a story, t
 
 Even though the project eventually finds a model that yields the best results for the Telco dataset, it doesn't mean that all churn analysis should be done using the same method, it's important to remember that different datasets interact with models distinctively. 
 
+In order to follow the modelling process without coming across errors two files were created to summarize the results found during the first two deliverables: one retrieving data from postgres and one using the csv file saved locally.
+
+[CSV_Telco_Customer_Churn.ipynb](https://github.com/XDarkPhoenixes/Group_10/blob/d88525b5a6c1cd62938491d7af8db76be536b1e6/CSV_Telco_Customer_Churn.ipynb)
+
+[Summary_Modelling_Database.ipynb](https://github.com/XDarkPhoenixes/Group_10/blob/d88525b5a6c1cd62938491d7af8db76be536b1e6/Summary_Modelling_Database.ipynb)
 
 ## Customer Churn
 
@@ -280,6 +285,9 @@ Main Branch:
 README.md:
 - [X] 3. Cohesive, structured outline of the project
 - [X] 3. Link to Google Slides presentation - draft
+
+[Group Presentation - draft](https://docs.google.com/presentation/d/1z_FINC6oIh9rfipcNyjEfOnYt6zm2i0fSWdWJcuA-I4/edit?usp=sharing)
+
 - [ ] 4. Link to dashboard
 - [ ] 4. Link to Google Slides presentation
 
