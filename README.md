@@ -258,7 +258,7 @@ Content:
 - [X] 2. Description of the data exploration phase of the project
 - [X] 2. Description of the analysis phase of the project
 - [X] 3. Technologies, languages, tools, and algorithms used throughout the project
-- [ ] 4. Result of analysis
+- [X] 4. Result of analysis
 - [ ] 4. Recommendation for future analysis
 - [ ] 4. Anything the team would have done differently
 
@@ -278,8 +278,8 @@ Main Branch:
 - [X] 2. Outline of the project
 - [X] 2. All code necessary to perform exploratory analysis
 - [X] 3. Description of the communication protocols has been removed
-- [ ] 4. All code necessary to complete the machine learning portion of the project
-- [ ] 4. Any images that have been created (at least three)
+- [X] 4. All code necessary to complete the machine learning portion of the project
+- [X] 4. Any images that have been created (at least three)
 - [ ] 4. Requirements.txt file
 
 README.md:
@@ -288,8 +288,13 @@ README.md:
 
 [Group Presentation - draft](https://docs.google.com/presentation/d/1z_FINC6oIh9rfipcNyjEfOnYt6zm2i0fSWdWJcuA-I4/edit?usp=sharing)
 
-- [ ] 4. Link to dashboard
-- [ ] 4. Link to Google Slides presentation
+- [X] 4. Link to dashboard
+
+[Customer Churn storyboard](https://public.tableau.com/shared/HTPY7BKPR?:display_count=n&:origin=viz_share_link)
+
+- [X] 4. Link to Google Slides presentation
+
+[Group Presentation (Google Slides)](https://docs.google.com/presentation/d/1z_FINC6oIh9rfipcNyjEfOnYt6zm2i0fSWdWJcuA-I4/edit?usp=sharing)
 
 **Machine Learning Model** 
 
