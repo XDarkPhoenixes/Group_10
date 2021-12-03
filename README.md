@@ -259,8 +259,8 @@ Content:
 - [X] 2. Description of the analysis phase of the project
 - [X] 3. Technologies, languages, tools, and algorithms used throughout the project
 - [X] 4. Result of analysis
-- [ ] 4. Recommendation for future analysis
-- [ ] 4. Anything the team would have done differently
+- [X] 4. Recommendation for future analysis
+- [X] 4. Anything the team would have done differently
 
 Slides:
 - [X] 2. Presentations are drafted in Google Slides
@@ -268,10 +268,10 @@ Slides:
 - [X] 3. Images are clear, in high-definition, and directly illustrative of subject matter
 
 Live Presentation:
-- [ ] 4. All team members present in equal proportions
-- [ ] 4. The team demonstrates the dashboard's real-time interactivity
-- [ ] 4. The presentation falls within any time limits provided by the instructor
-- [ ] 4. The submission includes speaker notes, flashcards, or a video of the presentation rehearsal
+- [X] 4. All team members present in equal proportions
+- [X] 4. The team demonstrates the dashboard's real-time interactivity
+- [X] 4. The presentation falls within any time limits provided by the instructor
+- [X] 4. The submission includes speaker notes, flashcards, or a video of the presentation rehearsal
 
 Main Branch:
 - [X] 1. Description of the communication protocols
@@ -322,7 +322,7 @@ README.md:
 
 [Summary_Modelling_Database.ipynb](https://github.com/XDarkPhoenixes/Group_10/blob/main/Summary_Modelling_Database.ipynb)
 
-- [ ] 4. Description and explanation of model's confusion matrix, including final accuracy score
+- [X] 4. Description and explanation of model's confusion matrix, including final accuracy score
 
 **Database Integration**
 
